@@ -58,6 +58,7 @@ html, body {
   border-radius: 20px;
   font-family: 'Raleway', sans-serif;
   color: #FFFDF6;
+  background: rgba(0,0,0,0.3);
   font-size: : 135%;
   padding: 10px 30px;
   border: solid #FFFDF6;
@@ -66,7 +67,9 @@ html, body {
 }
 
 .btn:hover {
-  size: 110%;
+  background: rgba(255, 253, 246, 0.8);
+  color: #000;
+  transition: 0.2s;
 }
 
 .text {
