@@ -15,7 +15,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat 50% 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.5)), url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat 50% 50%;
   display: table;
   background-size: cover;
 }
@@ -73,9 +73,12 @@ html, body {
 }
 
 .text {
-  margin-top: 25%;
-  margin-left: 25%;
-  margin-right: 25%;
+  display: table-cell;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  line-height: 1.25;
+  vertical-align: middle;
   font-family: 'Montserrat', sans-serif;
   color: #FFFDF6;
 }
@@ -84,7 +87,14 @@ html, body {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(20, 20, 20, 20)), url('fieldbackground.jpg') no-repeat 50% 50%;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 1)), url('fieldbackground.jpg') no-repeat 50% 50%;
   display: table;
   background-size: cover;
+}
+
+.foot {
+  text-align: center;
+  padding: 2%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #FFFDF6;
 }
