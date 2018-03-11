@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat 50% 50%;
+  display: table;
+  background-size: cover;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Muli', sans-serif;
+  color: #FFFDF6;
+  text-shadow: 0px 0px 300 #000;
+  font-size: 100px;
+  margin-bottom: 5px;
+}
+
+.content h2{
+  padding-top: 0px;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFDF6;
+  text-shadow: 0px 0px 300 #000;
+  font-size: 135%;
+  text-transform: lowercase;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: 100px;
+}
+
+
+.btn {
+  border-radius: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFDF6;
+  font-size: : 135%;
+  padding: 10px 30px;
+  border: solid #FFFDF6;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  size: 110%;
+}
+
+.text {
+  margin-top: 25%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFDF6;
+}
+
+.paragraph {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(20, 20, 20, 20)), url('fieldbackground.jpg') no-repeat 50% 50%;
+  display: table;
+  background-size: cover;
+}
