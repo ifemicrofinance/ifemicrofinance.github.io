@@ -3,6 +3,9 @@
 <head>
   <title> Welcome to Ife Microfinance </title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
   <section class="intro">
@@ -17,7 +20,7 @@
     </div>
   </section>
   <section class="paragraph" id="paragraph">
-    <div class="text" >
+    <div class="text">
       <p>
         Hi! We are Ife and we would like you to invest in our cause. Ife means love in Yoruba, but if you invest in us, it will mean love to millions of farmers around the world. We are a company that wishes to help developing countries improve their living conditions through a technique known as microfinance. Your money, through our hands, will be used to buy farm capital to fit the needs of a farmer. From joining a sales contract with Ife, the farmer will sell some of their harvested crops to us, and we will then sell some of them back to the farmer at a predetermined markup price. We will also store a portion of the produced crop and seed in order to hedge for the capital recipient farmer's losses. Another portion of the crop will be sold to non-lending partners, who need crop or seed to hedge for unexpected losses, and this partner will give a predetermined portion of sale back to us. This payment will be split between Ife and the farmer who initially received the capital. This process, however, can begin only with funds from donors, so we hope to be able to secure donations from you. This explicit relationship between donor and creditor is yet to be seen elsewhere, and Ife's commitment to long term growth and eco-friendliness makes us your best bet in micro lending.
       </p>
@@ -26,26 +29,4 @@
   <footer class="foot">Copyright &copy; ifemicrofinance.github.io <br> microfinanceife@gmail.com</footer>
 
 </body>
-
-<script
- src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-<script>
-  $(document).ready(function(){
-    $("a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      }
-    });
-  });
-</script>
-
-
-
 </html>
