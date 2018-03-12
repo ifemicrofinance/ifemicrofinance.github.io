@@ -97,6 +97,15 @@ header {
   background-size: cover;
 }
 
+.about {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 1)), url('thirdbackground.jpg') no-repeat;
+  display: table;
+  background-size: cover;
+}
+
 .foot {
   text-align: center;
   padding: 2%;
