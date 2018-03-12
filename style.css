@@ -11,11 +11,16 @@ html, body {
   width: 100%;
 }
 
+header {
+  position: absolute;
+  z-index: 1;
+}
+
 .intro {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.5)), url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat 50% 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(50, 50, 50, 0.5)), url('http://escapebrooklyn.com/wp-content/uploads/2017/09/NST3130.jpg') no-repeat;
   display: table;
   background-size: cover;
 }
@@ -87,7 +92,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 1)), url('fieldbackground.jpg') no-repeat 50% 50%;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 1)), url('fieldbackground.jpg') no-repeat;
   display: table;
   background-size: cover;
 }
