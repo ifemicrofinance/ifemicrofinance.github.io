@@ -13,6 +13,6 @@ $(document).ready(function(){
 
   setTimeout(function() {
     $('body').addClass('loaded');
+    $(document).scrollTop(0);
   }, 2000);
-  
 });
