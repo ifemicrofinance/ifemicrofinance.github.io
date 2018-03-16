@@ -24,6 +24,6 @@ if (isset($_POST['submit'])) {
     $mail->Body = 'A test email';
     $mail->AddAddress('zaozaostan@gmail.com');
 
-    $mail->Send();
+    //$mail->Send();
 }
 ?>
