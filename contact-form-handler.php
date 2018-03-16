@@ -19,7 +19,7 @@ $mail->Password = 'basischandler';
 
 
 if (isset($_POST['submit'])) {
-    $mail->SetFrom($_POST['microfinanceife@gmail.com']);
+    $mail->SetFrom('microfinanceife@gmail.com');
     $mail->Subject = $_POST['subject'];
     $name = $_POST['name'];
     $message = $_POST['message'];
