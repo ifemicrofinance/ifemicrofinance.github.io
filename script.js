@@ -11,8 +11,22 @@ $(document).ready(function(){
     }
   });
 
+  window.onload = function() {
+         var loaded = document.getElementsByTagName("body")[0];
+         loaded.className = "loaded";
+  };
+
   setTimeout(function() {
     $('body').addClass('loaded');
     $(document).scrollTop(0);
-  }, 2000);
+  });
+
+  window.onscroll = function() {scroll()};
+
+  function scroll() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("bar").style.width = scrolled + "%";
+  }
 });
