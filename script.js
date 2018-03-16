@@ -31,6 +31,7 @@ $(document).ready(function(){
   }
 
   $('#submit').click(function() {
+      console.log('test');
       $.ajax({
         type: "POST",
         url: "https://mandrillapp.com/api/1.0/messages/send.json",
