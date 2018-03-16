@@ -19,10 +19,12 @@ $mail->Password = 'basischandler';
 
 
 if (isset($_POST['submit'])) {
-    $mail->SetFrom('no-reply@howcode.org');
-    $mail->Subject = 'Hello world';
-    $mail->Body = 'A test email';
-    $mail->AddAddress('zaozaostan@gmail.com');
+    $mail->SetFrom('microfinanceife@gmail.com');
+    $mail->Subject = $_POST['subject'];
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+    $mail->Body = ("You have received an e-mail from ".$name".\n\n".$message);
+    $mail->AddAddress($_POST['mail']);
 
     $mail->Send();
 }
