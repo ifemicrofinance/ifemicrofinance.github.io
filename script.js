@@ -30,29 +30,17 @@ $(document).ready(function(){
     document.getElementById("bar").style.width = scrolled + "%";
   }
 
-  $('#submit').click(function() {
-    console.log('test');
-      console.log('test');
+  $('#contact-form').submit(function(e) {
+      var name = document.getElementById('name')
+      var email = document.getElementById('email')
+      var message = document.getElementById('message')
+
       $.ajax({
-        type: "POST",
-        url: "https://mandrillapp.com/api/1.0/messages/send.json",
-        data: {
-          'key': '8_sX6DuhJEqaew93QH6nnQ',
-          'message': {
-            'from_email': 'zaozaostan@gmail.com',
-            'to': [
-                {
-                  'email': 'microfinanceife@gmail.com',
-                  'type': 'to'
-                }
-              ],
-            'autotext': 'true',
-            'subject': 'test',
-            'html':'test message'
-          }
-        }
-       }).done(function(response) {
-         console.log(response); // if you're into that sorta thing
-       });
+          method: 'POST',
+          url: '//formspree.io/microfinanceife@gmail.com',
+          data: $('#contact-form').serialize(),
+          datatype: 'json'
+      });
+      e.preventDefault();
   });
 });
