@@ -61,19 +61,4 @@ $(document).ready(function(){
     var scrolled = (winScroll / height) * 100;
     document.getElementById("bar").style.width = scrolled + "%";
   }
-
-  $('#contact-form').submit(function(e) {
-      var name = document.getElementById('name')
-      var email = document.getElementById('email')
-      var message = document.getElementById('message')
-
-      $.ajax({         
-          method: 'POST',
-          url: '//formspree.io/microfinanceife@gmail.com',
-          data: $('#contact-form').serialize(),
-          datatype: 'json'
-      });
-      e.preventDefault();
-      $(this).get(0).reset();
-  });
 });
