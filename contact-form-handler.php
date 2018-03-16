@@ -12,7 +12,7 @@ $mail->SMTAuth = true;
 $mail->SMTPSecure = 'ssl';
 $mail->Host = 'smtp.gmail.com';
 $mail->Port = '587';
-$mail->isHTML();
+$mail->isHTML(true);
 $mail->Username = 'microfinanceife@gmail.com';
 $mail->Password = 'basischandler';
 
