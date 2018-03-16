@@ -58,10 +58,9 @@
       <div class="contact-form">
           <div id="form-messages"></div>
           <form id="contact-form" method="POST" action="https://formspree.io/microfinanceife@gmail.com">
-              <input id="name" type="text" class="form-control" placeholder="Full name" required><br>
-              <input id="email" type="text" class="form-control" placeholder="Your e-mail" required><br>
-              <input type="text" name="_subject" class="form-control" placeholder="Subject"/><br>
-              <textarea id="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+              <input name="_subject" type="text" class="form-control" placeholder="Name" required/><br>
+              <input name="email" type="email" class="form-control" placeholder="Your email" required><br>
+              <textarea name="message" class="form-control" placeholder="Your message" rows="6" required></textarea><br>
               <button id="submit" type="submit" class="form-control submit" value="send">SEND MAIL</button>
           </form>
       </div>
