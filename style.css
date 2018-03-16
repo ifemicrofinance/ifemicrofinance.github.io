@@ -145,7 +145,19 @@ header {
   transition: all 0.3s 1s ease-out;
 }
 
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  margin-bottom: 5px;
 
+}
+
+.progress-bar {
+  height: 3px;
+  background: #EFECEC;
+  width: 0%;
+}
 
 .intro {
   height: 100%;
@@ -171,7 +183,7 @@ header {
 
 .content h1 {
   font-family: 'Muli', sans-serif;
-  color: #FFFDF6;
+  color: #EFECEC;
   text-shadow: 0px 0px 300 #000;
   font-size: 100px;
   margin-bottom: 5px;
@@ -180,7 +192,7 @@ header {
 .content h2{
   padding-top: 0px;
   font-family: 'Raleway', sans-serif;
-  color: #FFFDF6;
+  color: #EFECEC;
   text-shadow: 0px 0px 300 #000;
   font-size: 135%;
   text-transform: lowercase;
@@ -193,17 +205,17 @@ header {
 .btn {
   border-radius: 20px;
   font-family: 'Raleway', sans-serif;
-  color: #FFFDF6;
+  color: #EFECEC;
   background: rgba(0,0,0,0.3);
   font-size: : 135%;
   padding: 10px 30px;
-  border: solid #FFFDF6;
+  border: solid #EFECEC;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: rgba(255, 253, 246, 0.8);
+  background: rgba(239, 236, 236, 0.8);
   color: #000;
   transition: 0.2s;
 }
@@ -216,7 +228,7 @@ header {
   line-height: 1.25;
   vertical-align: middle;
   font-family: 'Montserrat', sans-serif;
-  color: #FFFDF6;
+  color: #EFECEC;
 }
 
 .paragraph {
@@ -235,6 +247,60 @@ header {
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 1)), url('hillbackground.jpg') no-repeat;
   display: table;
   background-size: cover;
+}
+
+.contact-container {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: table;
+    text-align: center;
+    background: #EFECEC;
+    font-family: 'Montserrat';
+}
+
+.contact-title {
+    margin-top: 32px;
+    color: #36912B;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+form {
+    margin: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #36912B;
+    font-size: 18px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Muli';
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    width: 400px;
+    background: #36912B;
+    border-color: transparent;
+    border-radius: 5px;
+    color: #EFECEC;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+
 }
 
 .fa {
