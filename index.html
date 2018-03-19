@@ -57,12 +57,12 @@
         <h3>Contact Us</h3>
       </div>
       <div class="contact-form">
-          <form id="contact-form" method="post">
-              <input name="name" type="text" class="form-control" placeholder="Full name" required><br>
-              <input name="email" type="text" class="form-control" placeholder="Your e-mail" required><br>
-              <input name="subject" type="text" class="form-control" placeholder="Subject"><br>
-              <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-              <button name="submit" type="submit" class="form-control submit">SEND MAIL</button>
+          <div id="form-messages"></div>
+          <form id="contact-form" method="POST" action="https://formspree.io/microfinanceife@gmail.com">
+              <input name="_subject" type="text" class="form-control" placeholder="Name" required/><br>
+              <input name="email" type="email" class="form-control" placeholder="Your email" required><br>
+              <textarea name="message" class="form-control" placeholder="Your message" rows="6" required></textarea><br>
+              <button id="submit" type="submit" class="form-control submit" value="send">SEND MAIL</button>
           </form>
       </div>
   </div>
